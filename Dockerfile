@@ -18,4 +18,7 @@ gdb \
 netcat \
 lib32ncurses5
 
-RUN ./tools/binwalk/setup.py install
+WORKDIR /opt/tools/binwalk
+RUN ./setup.py install
+
+WORKDIR /opt
