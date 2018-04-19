@@ -5,9 +5,9 @@ WORKDIR /opt
 
 RUN mkdir tools
 COPY ./tools ./tools
-COPY sources.list /etc/apt/sources.list
 
-RUN apt-get -y update && apt-get install -y vim \
+RUN apt-get -y update
+RUN apt-get install -y vim \
 nano \
 gcc \
 git \
