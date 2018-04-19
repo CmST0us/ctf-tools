@@ -1,0 +1,8 @@
+version: '0.0.1'
+
+services:
+  ctf-tool:
+    image: ctf-tool
+    build: .
+    ports:
+      - 3000:3000
